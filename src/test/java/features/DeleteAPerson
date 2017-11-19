@@ -1,0 +1,6 @@
+Feature:Delete A Person
+
+  Scenario: Delete A Person from the Application
+
+    When I delete a person from the application
+    Then The entry is deleted and the page is updated

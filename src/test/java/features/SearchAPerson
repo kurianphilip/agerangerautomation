@@ -1,0 +1,7 @@
+Feature:Search A New Person
+
+  Scenario: Search People of different ages
+
+    When I search for a particular person
+    Then The result is displayed by the application
+
