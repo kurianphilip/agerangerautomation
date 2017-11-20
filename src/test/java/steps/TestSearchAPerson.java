@@ -12,10 +12,9 @@ public class TestSearchAPerson {
 
     private WebDriver driver ;
 
-    String firstname,lastname;
 
-    @When("^I search for a particular person$")
-    public void i_search_for_a_particular_person() throws Throwable {
+    @When("^I search for a particular person with \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void i_search_for_a_particular_person_with_and(String firstname, String lastname) throws Throwable {
 
         System.setProperty("webdriver.chrome.driver",  "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -26,10 +25,10 @@ public class TestSearchAPerson {
 
     }
 
-    @Then("^The result is displayed by the application$")
-    public void the_result_is_displayed_by_the_application() throws Throwable {
+    @Then("^The result for \"([^\"]*)\" is displayed by the application$")
+    public void the_result_for_is_displayed_by_the_application(String firstname) throws Throwable {
 
-        Assert.assertTrue(driver.findElement(By.xpath("//tr/td[contains(text(), '"+ firstname+ "')]")) != null);
+        Assert.assertTrue(driver.findElement(By.xpath("//tr/td[contains(text(), '"+ firstname + "')]")) != null);
 
     }
 

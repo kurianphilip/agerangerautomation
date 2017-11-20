@@ -1,7 +1,15 @@
 Feature:Search A New Person
 
-  Scenario: Search People of different ages
+  Scenario Outline: Search People of different ages
 
-    When I search for a particular person
-    Then The result is displayed by the application
+    When I search for a particular person with <firstname> and <lastname>
+    Then The result for <firstname> is displayed by the application
+
+    Examples:
+      | firstname | lastname |
+    | Mark      | Antony   |
+
+
+
+
 
