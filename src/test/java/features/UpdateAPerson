@@ -1,7 +1,11 @@
 Feature:Update A New Person
 
-  Scenario: Update an existing person in the application
+  Scenario Outline: Update an existing person in the application
 
-    When I update the details of a particular person
-    Then The details are updated
-    And The new data is displayed
+    When I update the details of a person with name <firstname> and <lastname>
+    When The details are updated with <firstnameupdated>
+    Then The new data for <firstnameupdated>  is displayed
+
+    Examples:
+      | firstname | lastname | firstnameupdated |
+      | Mark      | Antony   | Marc             |
