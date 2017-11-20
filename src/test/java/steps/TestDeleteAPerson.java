@@ -12,10 +12,10 @@ public class TestDeleteAPerson {
 
     private WebDriver driver ;
 
-    String firstname;
 
-    @When("^I delete a person from the application$")
-    public void i_delete_a_person_from_the_application() throws Throwable {
+
+    @When("^I delete a person of \"([^\"]*)\" and \"([^\"]*)\" from the application$")
+    public void i_delete_a_person_of_and_from_the_application(String firstname, String lastname) throws Throwable {
 
         System.setProperty("webdriver.chrome.driver",  "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
@@ -30,8 +30,8 @@ public class TestDeleteAPerson {
 
     }
 
-    @Then("^The entry is deleted and the page is updated$")
-    public void the_entry_is_deleted_and_the_page_is_updated() throws Throwable {
+    @Then("^The entry \"([^\"]*)\" is deleted and the page is updated$")
+    public void the_entry_is_deleted_and_the_page_is_updated(String firstname) throws Throwable {
 
         Assert.assertTrue(!driver.getPageSource().contains(firstname));
 

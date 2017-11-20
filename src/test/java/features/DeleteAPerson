@@ -1,6 +1,11 @@
 Feature:Delete A Person
 
-  Scenario: Delete A Person from the Application
+  Scenario Outline: Delete A Person from the Application
 
-    When I delete a person from the application
-    Then The entry is deleted and the page is updated
+    When I delete a person of <firstname> and <lastname> from the application
+    Then The entry <firstname> is deleted and the page is updated
+
+
+    Examples:
+      | firstname | lastname |
+      | Mark      | Antony   |

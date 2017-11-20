@@ -22,10 +22,10 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c3855fe-2ef3-4af7-9f0c-96c412f637e6" name="Default" comment="Search Script Update">
+    <list default="true" id="5c3855fe-2ef3-4af7-9f0c-96c412f637e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/features/SearchAPerson" afterPath="$PROJECT_DIR$/src/test/java/features/SearchAPerson" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/TestSearchAPerson.java" afterPath="$PROJECT_DIR$/src/test/java/steps/TestSearchAPerson.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/features/DeleteAPerson" afterPath="$PROJECT_DIR$/src/test/java/features/DeleteAPerson" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java" afterPath="$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -57,14 +57,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestSearchAPerson.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSearchAPerson.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestSearchAPerson.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="306">
               <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDeleteAPerson.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteAPerson" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/features/DeleteAPerson">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -446,12 +468,13 @@
         <option value="$PROJECT_DIR$/src/test/java/MyStepdefs.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/AddNewPerson" />
         <option value="$PROJECT_DIR$/src/test/java/features/UpdateAPerson" />
-        <option value="$PROJECT_DIR$/src/test/java/features/DeleteAPerson" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestAddNewPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/DeleteAPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestUpdateAPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/TestSearchAPerson.java" />
         <option value="$PROJECT_DIR$/src/test/java/features/SearchAPerson" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java" />
+        <option value="$PROJECT_DIR$/src/test/java/features/DeleteAPerson" />
       </list>
     </option>
   </component>
@@ -553,7 +576,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Scenario: Search People of different ages">
+  <component name="RunManager" selected="Cucumber java.Scenario: Delete A Person from the Application">
     <configuration name="Scenario: Add People of different ages" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -759,9 +782,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Search People of different ages" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Update an existing person in the application" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Delete A Person from the Application" />
+        <item index="0" class="java.lang.String" itemvalue="Cucumber java.Scenario: Delete A Person from the Application" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Scenario: Search People of different ages" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Scenario: Update an existing person in the application" />
         <item index="3" class="java.lang.String" itemvalue="Cucumber java.Scenario: Delete a person from application" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Scenario: Add People of different ages" />
       </list>
@@ -802,17 +825,24 @@
       <option name="project" value="LOCAL" />
       <updated>1511120234106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Search Script Update">
+      <created>1511150512878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511150512878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__AddNewPerson - 2017.11.20 at 05h 20m 08s.xml">
-      <configuration name="Feature: AddNewPerson" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
     <history-entry file="Scenario__Add_People_of_different_ages - 2017.11.20 at 05h 21m 45s.xml">
       <configuration name="Scenario: Add People of different ages" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Delete_A_Person_from_the_Application - 2017.11.20 at 07h 23m 04s.xml">
+      <configuration name="Scenario: Delete A Person from the Application" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Scenario__Delete_A_Person_from_the_Application - 2017.11.20 at 17h 04m 49s.xml">
       <configuration name="Scenario: Delete A Person from the Application" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Scenario__Delete_a_person_from_application - 2017.11.20 at 07h 18m 32s.xml">
@@ -877,7 +907,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Updates" />
     <MESSAGE value="Test Scripts Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Scripts Updates" />
+    <MESSAGE value="Search Script Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search Script Update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1008,24 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/features/DeleteAPerson">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="25" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestAddNewPerson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1072,8 +1085,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestSearchAPerson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="306">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/features/DeleteAPerson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/TestDeleteAPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
