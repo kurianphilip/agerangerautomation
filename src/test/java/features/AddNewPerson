@@ -1,19 +1,18 @@
-Feature:Add A New Person
+Feature: Add A New Person
 
 
   Scenario Outline: Add People of different ages
     As a user, when I add people of different ages
     I should be able to see them classified into different age groups
 
-    When I add a person with first name as <firstName> and last name as <lastName>
-    And The person is of age <Age>
-    Then A new entry is created for <firstName> <lastName> with age group <ageGroup>
-
+    When I add a person with first name as "<firstName>" and last name as "<lastName>"
+    And The person is of age "<Age>"
+    Then A new entry is created for "<firstName>" "<lastName>" with age group "<ageGroup>"
 
     Examples:
       | firstName | lastName | Age | ageGroup |
       | Alex      | Daniel   | 0   | Toddler  |
-      | Mathew    | Howard   | 12  | Child    |
+    #  | Mathew    | Howard   | 12  | Child    |
 
 
 

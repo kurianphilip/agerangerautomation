@@ -10,7 +10,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
-
 public class TestAddNewPerson {
 
     private WebDriver driver ;
@@ -21,6 +20,13 @@ public class TestAddNewPerson {
         System.setProperty("webdriver.chrome.driver",  "C:\\Selenium\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://ageranger.azurewebsites.net/#/");
+        WebElement agegroupTR = driver.findElement(By.xpath("//td[contains(text(), '"+firstname +"')]"));
+        WebElement elem = agegroupTR.findElement(By.cssSelector("td:nth-child(2)"));
+
+        System.exit(0);
+
+
+
         Thread.sleep(5000);
         driver.findElement(By.className("fa-2x")).click();
         Thread.sleep(1000);
@@ -33,16 +39,22 @@ public class TestAddNewPerson {
     public void the_person_is_of_age(String age) throws Throwable {
         driver.findElement(By.name("Age")).sendKeys(age);
         driver.findElement(By.className("btn-primary")).click();
+        Thread.sleep(1000);
         driver.findElement(By.cssSelector("button[data-bb-handler^=confirm")).click();
 
     }
 
 
-    @Then("^A new entry is created for 'firstName\"([^\"]*)\"lastName\"([^\"]*)\"ageGroup\"$")
-    public void aNewEntryIsCreatedForFirstNameLastNameAgeGroup(String firstname, String agegroup) throws Throwable {
+    @Then("^A new entry is created for \"([^\"]*)\" \"([^\"]*)\" with age group \"([^\"]*)\"$")
+    public void a_new_entry_is_created_for_with_age_group(String firstname, String lastname, String agegroup) throws Throwable {
 
+        Thread.sleep(3000);
         WebElement agegroupTR = driver.findElement(By.xpath("//td[contains(text(), '"+firstname +"')]\\.."));
         WebElement elem = agegroupTR.findElement(By.cssSelector("td:nth-child(2)"));
+
+
         Assert.assertEquals(agegroup, elem.getAttribute("text"));
+        Thread.sleep(500);
+        driver.quit();
     }
 }
